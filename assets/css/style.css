@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fadeout { 
+  animation: fadeOut 1.5s;
+  animation-fill-mode: both; 
+}
+.fadein {
+  animation: fadeIn 2s;
+  animation-fill-mode: both; 
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1; 
+  }
+  100% {
+      opacity: 0; 
+  }
+}
+@keyframes fadeIn {
+  0% {
+      opacity: 0; 
+  }
+  100% {
+      opacity: 1; 
+  }
+}
+
+
+body{
+  height: 100vh;
+  background-color: rgb(39, 41, 68);
+}
+
+h1,
+h2,
+p {
+  color: #fff;
+}
+
+h2{
+  font-size: 30px;
+}
+p{
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+/* 
+game
+*/
+.game{}
+.scores{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+.player-score{
+  text-align: center;
+}
+.player-score-title{}
+.js-player-score{}
+.computer-score{
+  text-align: center;
+}
+.js-computer-scire{}
+.top-hero{}
+.game-title{
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10vh;
+}
+.start-button,
+.rock,
+.scissors,
+.paper{
+  color: #fff;
+  background-color: rgb(9, 145, 111);
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  width: 160px;
+  height: 50px;
+  border-radius: 8px;
+}
+.start-button{
+  margin-top: 15vh;
+}
+/* 
+fight
+*/
+.fight{
+  display: none;
+}
+.fight-title{
+  text-align: center;
+  font-size: 50px;
+}
+.kind-hands{
+  text-align: center;
+  gap: 20px;
+}
+.player-hand{
+  transform: rotateY(180deg);
+}
+.computer-hand{}
+.options{
+  margin: 0 22%;
+  margin-top: 5vh;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  vertical-align: middle;
+}
+.rock{}
+.paper{}
+.scissors{}
