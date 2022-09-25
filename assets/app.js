@@ -4,7 +4,7 @@
   const TopHero = document.querySelector(".top-hero")
   const Fight = document.querySelector(".fight")
   
-  //スタートボタンを押したら　画面のフェードアウト＆フェードイン実装
+  //スタートボタンを押したら 画面のフェードアウト＆フェードイン実装
   StartBtn.addEventListener("click",function(){
     TopHero.classList.add("fadeout")
     TopHero.style.display = "none";
@@ -13,7 +13,6 @@
   })
   
   const Options = document.querySelectorAll(".options button")
-  const Hands = document.querySelectorAll(".kind-hands img")
   const Player = document.querySelector(".player-hand")
   const Computer = document.querySelector(".computer-hand")
   const FightTitle = document.querySelector(".fight-title")
@@ -28,7 +27,7 @@
     Player.style.animation = ""
     Computer.style.animation = ""
   } 
-　
+
   //スコア加算の関数
   let playerscore = 0;
   let computerscore = 0;
@@ -38,7 +37,7 @@
     myscore.textContent = playerscore ;
     opponentscore.textContent = computerscore;
   }
-　
+
   //optionsのボタンが押されたときの処理
   Options.forEach(hands => {
     hands.addEventListener("click",function(){
